@@ -1,0 +1,18 @@
+[tag_Role_swarm]
+
+[tag_Type_manager]
+
+[tag_Type_worker]
+
+[swarm:children]
+tag_Role_swarm
+
+[docker_swarm_manager:children]
+tag_Type_manager
+
+[docker_swarm_worker:children]
+tag_Type_worker
+
+[localhost]
+127.0.0.1 ansible_connection=local
+

@@ -1,0 +1,4 @@
+---
+# tasks file for swarm
+
+- include: swarm_cluster.yml 
